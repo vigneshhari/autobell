@@ -1,0 +1,15 @@
+{% for i in data.schedule %}
+{{i.id}}  {{i.time}}<br>
+{% endfor %}
+
+
+<form action="/delete" type="get">
+Remove<input type="input" name="id"  ><br>
+<input type="submit">
+</form>
+
+<form action="/add" type="get">
+Add New Time<input type="input" name="id"  ><br>
+Duration<input type="input" name="duration"  ><br>
+<input type="submit">
+</form>

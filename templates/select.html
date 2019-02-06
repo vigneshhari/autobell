@@ -1,0 +1,8 @@
+
+<form action="/select" type="get">
+{% for i in select.type %}
+<input type="radio" name="schedule"  value={{i.id}} >schedule{{i.id}}<br>
+
+{% endfor %}
+<input type="submit">
+</form>
