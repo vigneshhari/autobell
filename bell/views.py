@@ -70,3 +70,10 @@ def delete(request):
             file.write("{}".format(i["time"]))
     file.close()
     return HttpResponseRedirect("/showcurrent")
+    
+
+def home(request):
+    return render(request,"main.html")
+
+def credit(request):
+    return render(request,"credit.html")

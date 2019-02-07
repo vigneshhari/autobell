@@ -19,10 +19,11 @@ from django.urls import path
 from . import views 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('scheduleselect/' , views.select  ), #This one
+	path('home/' , views.home  ), # Home URL
+    path('credit/' , views.credit  ), #Credit URL
+    path('scheduleselect/' , views.select  ), #Select Scheudle URL
     path('select/' , views.selectschedule  ),
-    path('showcurrent/' , views.show  ),# This one
+    path('showcurrent/' , views.show  ),# Schedule Edit URL
     path('add/' , views.add  ),
     path('delete/' , views.delete  )
     
